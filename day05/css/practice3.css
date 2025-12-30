@@ -1,0 +1,43 @@
+.container{
+    padding: 20px;
+}
+
+.image > img{
+    width: 250px;
+}
+
+.item{
+    margin-top: 20px;
+}
+.item-title{
+    padding: 0px;
+}
+
+.item-title-number{
+    display: inline;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.orange{
+    color: orange;
+}
+
+.item-title-text{
+    font-size: 16px;
+}
+
+.item-content{
+    margin-top: 10px;
+    background-color: #136b55;
+    padding: 10px;
+}
+
+.item-content-text{
+    color: white;
+    margin: 0px; padding: 0px;
+}
