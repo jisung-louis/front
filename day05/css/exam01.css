@@ -1,0 +1,25 @@
+*{
+    border: solid 3px red;
+    padding: 10px;
+}
+
+.경기도{
+    border-top: solid 1px orange;
+    border-right: dotted 2px blue;
+    border-bottom: dashed 3px black;
+    border-left: double 4px green;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px red;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.안양시{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.사진1{
+    align-items: center;
+}

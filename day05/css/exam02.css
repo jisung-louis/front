@@ -1,0 +1,23 @@
+*{border: solid 1px red;}
+
+.s1{
+    display: inline;
+    width: 100px; height: 100px; /* 크기 지정 불가 */
+    margin: 20px; padding: 20px; /* (왼/오른) 안쪽/바깥 여백만 지정 가능 */
+}
+
+.s2{
+    display: block;
+    width: 100px; height: 100px; /* 크기 지정 가능 */
+    margin: 20px; padding: 20px; /* 크기 지정 가능 */
+}
+
+.s3{
+    display: inline-block;
+    width: 100px; height: 100px; /* 크기 지정 가능 */
+    margin: 20px; padding: 20px; /* 크기 지정 가능 */
+}
+
+.s4{
+    display: none;
+}
