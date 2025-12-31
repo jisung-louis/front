@@ -1,0 +1,142 @@
+body{
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.background{
+    background-color: #f0f2f5;
+    width:100%;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.이미지{
+    width: 250px;
+    margin-bottom: 40px;
+}
+.all{
+    padding: 20px ;
+    border-radius: 8px;
+    width: 432px;
+    background-color: white;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    margin-bottom:20px;
+}
+.헤더{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.text1 h3{
+    font-size: 32px;
+    margin: 0;
+}
+input[type="text"], input[type="password"], input[type="name"], select{
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 11px;
+    background-color: #f5f6f7;
+    font-size: 14px;
+}
+.birthday, .gender{
+    font-size: 12px;
+    color: #606770;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.생일{
+    display: flex;
+  
+}
+.생일 select{
+    margin-right: 5px;
+}
+.성함{
+    margin-right: 5px;
+    width: auto;
+}
+.이름{
+    display: flex;
+    justify-content: space-between;
+}
+.성별{
+    display: flex;
+    
+}
+.남자,.여자,.direct{
+    flex:1;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.남자,.여자{
+    margin-right: 5px;
+}
+.가입하기{
+    display: block;
+    width: 194px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; 
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.already{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+.footer{
+    margin: 0 auto;
+}
+.language,.copy{
+    align-items: center;
+    color: rgb(115,115, 115);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding-top: 8px;
+    width: 980px;
+    list-style: none;
+    gap: 10px;
+}
+.text3, .text4{
+    font-size: 11px;
+    color: #606770;
+    margin-top: 10px;
+}
+li> a{
+    color:#8a8d91;
+    text-decoration: none;
+}
+.divider{
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px;
+}
+.margin-zero{
+    margin:8px 0;
+}
+.number{
+    margin-top:10px;
+}
+a:hover{
+    text-decoration: underline;
+}
