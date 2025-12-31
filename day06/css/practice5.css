@@ -1,0 +1,43 @@
+.container{
+    border: 1px solid #eeeeee;
+    width: 390px;
+}
+.image{
+    width: 370px;
+    padding: 10px;
+}
+.image-img{
+    width: 100%;
+}
+.content{
+    border-top: 1px solid #eeeeee;
+    padding: 10px;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.price{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.description{
+    margin-top: 20px;
+}
+.metadata{
+    display: flex;
+    margin-top: 20px;
+}
+.review{
+    margin-right: 10px;
+}
+.rating{
+    margin-left: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.orange{
+    color: orange;
+}
