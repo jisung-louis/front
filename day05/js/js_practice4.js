@@ -87,9 +87,9 @@ num.push(Number(prompt("세 번째 정수 입력 : ")));
 let max;
 max = num[0];
 
-if (max > num[1])
+if (max < num[1])
     max = num[1];
-if (max > num[2])
+if (max < num[2])
     max = num[2];
 
 alert(max);

@@ -1,0 +1,22 @@
+*{
+    /* border: 1px solid red;
+    padding: 1px; */
+}
+#header, #main, #footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* 하위 요소를 배치하는 방법 : flex */
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+#content{
+    width: 640px;
+}
+#sidebar{
+    width: 360px;
+}
+#footer{
+    background-color: gray;
+}
