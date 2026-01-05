@@ -60,7 +60,7 @@ for (let i = 0; i < seatLayout.length; i++){
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
 // 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
 
-console.log(" ========== 문제 4 ==========");
+console.log(" ========== 문제 5 ==========");
 let numbers2 = [1, 5, 2, 3, 5, 1, 4, 2];
 let output2 = [];
 
@@ -74,24 +74,49 @@ console.log(output2);
 // let numbers = [5, 3, 4, 1, 2];
 // 힌트: 중첩 for 반복문을 사용하며, 이웃한 두 요소를 비교하 위치를 바꿉니다.
 
-console.log(" ========== 문제 4 ==========");
+console.log(" ========== 문제 6 ==========");
 let numbers3 = [5, 3, 4, 1, 2];
-for(let i = 0; true; i++){
-    for(let j = 0; j < numbers3.length - 1; j++){
+//console.log(`초기 numbers3 : ${numbers3}`)
+for(let i = 0; i < numbers3.length - 1; i++){
+    for(let j = 0; j < numbers3.length - 1 - i; j++){
         let temp;
         if(numbers3[j] > numbers3[j+1]){
             temp = numbers3[j+1];
             numbers3[j+1] = numbers3[j];
-            numbers3[j] = temp[3];
+            numbers3[j] = temp;
         }
+        //console.log(`J : ${j}회전, numbers3 : ${numbers3}`);
     }
-} //아직 이 코드 미완성
+    //console.log(`I : ${i}회전, numbers3 : ${numbers3}`);
+}
+console.log(numbers3);
 
 // 문제 7: 재고 관리 시스템
 // 두 개의 배열 products(상품 목록)와 stock(재고 수량)이 있습니다. 사용자로부터 구매할 상품명과 수량을 입력받아, 재고가 충분하면 "구매 완료!"를 출력하고 재고를 차감하세요. 재고가 부족하면 "재고가
 // 부족합니다."를 출력합니다.
 // let products = ['볼펜', '노트', '지우개'];
 // let stock = [10, 5, 20];
+
+// console.log(" ========== 문제 7 ==========");
+// let products = ['볼펜', '노트', '지우개'];
+// let stock = [10, 5, 20];
+
+// let purchase_product = prompt("구매할 상품 명 : ");
+// let purchase_count = prompt("구매할 상품 수량 : ");
+
+// let idx = products.indexOf(purchase_product);
+// if (idx != -1){
+//     if(stock[idx] >= purchase_count){
+//         stock[idx] -= purchase_count;
+//         alert(`${purchase_product} 구매 완료! 구매 수량 : ${purchase_count}, 남은 수량 : ${stock[idx]}`);
+//     }
+//     else{
+//         alert(`재고가 부족합니다. ${purchase_product}의 남은 수량 : ${stock[idx]}`);
+//     }
+// }
+// else{
+//     alert("ERROR : 구매할 상품 명을 잘못 입력했습니다.");
+// }
 
 // 문제 8: 영화 평점 시각화하기
 // 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -109,6 +134,26 @@ for(let i = 0; true; i++){
 // 위키드          ★★★★☆☆☆☆☆☆
 // 글래디에이터2   ★★★★★★★☆☆☆
 // 청설            ★★★★★★☆☆☆☆
+
+console.log(" ========== 문제 8 ==========");
+let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
+let movieRatings = [8, 4, 7, 6];
+let html = ``;
+
+for(let i = 0; i < movieNames.length; i++){
+    html += `<div>${movieNames[i]} : `
+    for(let j = 0; j < movieRatings[i]; j++){
+        html += `★`;
+    }
+    for(let j = 0; j < 10 - movieRatings[i]; j++){
+        html += `☆`;
+    }
+    html += `</div>`
+}
+html += `<br/>`
+document.write(html);
+
+
 // 문제 9: 좌석 예약 상태 표시하기
 // 총 6개의 좌석 상태 정보가 담긴 배열을 이용하여, 좌석 배치도와 상태를 HTML에 출력하는 프로그램을 작성하시오.
 // (1). 초기 데이터
@@ -125,6 +170,35 @@ for(let i = 0; true; i++){
 // 빈좌석 예약석   
 // 예약석 빈좌석
 // 예약석 빈좌석
+
+console.log(" ========== 문제 9 ==========");
+let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+let html2 = ``;
+for( let i = 0; i < seatStatus.length; i++){
+    if(i % 2 == 0){
+        html2 += `<div class=row>`
+        html2 += `<div class=${seatStatus[i]=="빈좌석" ? "blue" : "red"}>${seatStatus[i]}</div>`
+    }
+    else{
+        html2 += `<div class=${seatStatus[i]=="빈좌석" ? "blue" : "red"}>${seatStatus[i]}</div>`
+        html2 += `</div>`
+    }
+}
+html2 += `
+            <style> 
+                .blue{
+                    color:blue;
+                }
+                .red{
+                    color:red;
+                }
+                .row{
+                    display:flex;
+                }
+            </style>
+        `
+html2 += `<br/>`
+document.write(html2);
 
 // 문제 10: 주차 요금 정산하기
 // 차량별 주차 시간 데이터가 주어졌을 때, 아래의 요금 규정에 따라 각 차량이 지불해야 할 최종 주차 요금을 계산하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -151,3 +225,20 @@ for(let i = 0; true; i++){
 // 추가 요금 단위 계산식:parseInt( (총 주차시간 - 30) / 10 )
 // 계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
 
+
+console.log(" ========== 문제 10 ==========");
+let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+let usageMinutes = [65, 30, 140, 420];
+let html3 = ``;
+
+for (let i = 0; i < carNumbers.length; i++){
+    html3 += `<div>`
+    let fee = 1000;
+    if( usageMinutes[i] > 30){
+        let overFee = parseInt((usageMinutes[i] - 30) / 10) * 500;
+        fee += overFee;
+        if(fee > 20000) fee = 20000;
+    }
+    html3 += `${carNumbers[i]}: ${usageMinutes[i]}분 주차, 최종 요금 : ${fee}원 </div>`
+}
+document.write(html3);
