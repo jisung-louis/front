@@ -1,0 +1,162 @@
+/* 공통 */
+*{
+    padding: 0px; margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+
+/* 작업용 */
+/* *{
+    border: 0.1px solid red;
+    padding: 0.1px;
+} */
+
+/* HEADER */
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+}
+#header .top-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+#header .top-menu li a{
+    margin-left: 10px;
+    font-size: 10px;
+}
+#header .main-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+#header .main-menu li a{
+    margin-left: 30px;
+    font-size: 20px; font-weight: bold;
+}
+
+/* BANNER */
+#banner{
+    margin-top: 20px;
+}
+#banner .banner-container{
+    width:100%;
+}
+
+/* MAIN */
+#main{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+#main .sidebar{
+    width: 20%;
+}
+#main .sidebar-title{
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+}
+#main .sidebar-description{
+    margin-top: 8px
+}
+#main .sidebar-input{
+    padding: 2px;
+    height: 24px;
+}
+#main .sidebar-button{
+    padding: 2px;
+    height: 24px;
+}
+#main .sidebar-sidemenu{
+    margin-top: 20px;
+    border-top: 1.5px solid black;
+}
+#main .sidebar-sidemenu .sidebar-sidemenu-title{
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+#main .sidebar-sidemenu > li{
+    padding: 2px 4px;
+    margin-bottom: 2px;
+}
+
+#main .content{
+    margin-left: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#main .content-left{
+    width: 49%;
+}
+#main .content-left-list{
+    margin-bottom: 30px;
+}
+#main .content-list-title{
+    padding: 4px;
+    border-bottom: 1.5px solid black;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+#main .content-left-list li{
+    justify-content: space-between;
+    display: flex;
+    padding: 4px;
+}
+#main .content-right{
+    width: 49%;
+}
+#main .content-right .content-item{
+    width: 40%;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#main .content-right .content-item .content-item-img{
+    width:100%;
+}
+
+/* FOOTER */
+#footer{
+    background-color:#1d3b7c;
+    color: white;
+    margin-top: 20px;
+}
+#footer .footer-inner{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#footer .footer-inner .footer-nav{
+    display: flex;
+    margin-bottom: 20px;
+}
+#footer .footer-inner .footer-nav li a{
+    color:white;
+    margin-right: 30px;
+}
+#footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+#footer .footer-content-item-title{
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+#footer .footer-content-item-content{
+    font-size: 10px;
+    line-height: 130%;
+}
