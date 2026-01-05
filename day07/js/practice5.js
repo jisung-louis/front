@@ -97,26 +97,26 @@ console.log(numbers3);
 // let products = ['볼펜', '노트', '지우개'];
 // let stock = [10, 5, 20];
 
-// console.log(" ========== 문제 7 ==========");
-// let products = ['볼펜', '노트', '지우개'];
-// let stock = [10, 5, 20];
+console.log(" ========== 문제 7 ==========");
+let products = ['볼펜', '노트', '지우개'];
+let stock = [10, 5, 20];
 
-// let purchase_product = prompt("구매할 상품 명 : ");
-// let purchase_count = prompt("구매할 상품 수량 : ");
+let purchase_product = prompt("구매할 상품 명 : ");
+let purchase_count = prompt("구매할 상품 수량 : ");
 
-// let idx = products.indexOf(purchase_product);
-// if (idx != -1){
-//     if(stock[idx] >= purchase_count){
-//         stock[idx] -= purchase_count;
-//         alert(`${purchase_product} 구매 완료! 구매 수량 : ${purchase_count}, 남은 수량 : ${stock[idx]}`);
-//     }
-//     else{
-//         alert(`재고가 부족합니다. ${purchase_product}의 남은 수량 : ${stock[idx]}`);
-//     }
-// }
-// else{
-//     alert("ERROR : 구매할 상품 명을 잘못 입력했습니다.");
-// }
+let idx = products.indexOf(purchase_product);
+if (idx != -1){
+    if(stock[idx] >= purchase_count){
+        stock[idx] -= purchase_count;
+        alert(`${purchase_product} 구매 완료! 구매 수량 : ${purchase_count}, 남은 수량 : ${stock[idx]}`);
+    }
+    else{
+        alert(`재고가 부족합니다. ${purchase_product}의 남은 수량 : ${stock[idx]}`);
+    }
+}
+else{
+    alert("ERROR : 구매할 상품 명을 잘못 입력했습니다.");
+}
 
 // 문제 8: 영화 평점 시각화하기
 // 주어진 영화 이름과 평점 배열을 이용하여, 각 영화의 평점을 별(★)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
