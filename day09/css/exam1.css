@@ -1,0 +1,40 @@
+.box{
+    width: 100px; height: 100px;
+    background-color: yellow; border: 1px solid red;
+    display: inline-block;
+}
+.box2{
+    /* static : HTML 작성 순서대로 배치, 위치 변경불가 */
+    position: static;
+    left: 50px;
+}
+.box3{
+    /* relative : 본래 위치로부터 상대 위치, 위치 변경 가능 */
+    position: relative;
+    top: 10px; left: 50px;
+}
+.box4{
+    /* absoulte : 가장 가까운 position 가진 상위요소의 기준 절대위치 */
+    position: absolute;
+    top: 30px; left: 20px;
+    background-color: blue;
+}
+.box5{
+    /* fixed : 디바이스 화면 위치 고정 */
+    position: fixed;
+    right: 50px; bottom: 50px;
+    background-color: green;
+}
+.parent{
+    position: relative;
+    border: 1px solid blue;
+}
+.box6{
+    position: absolute;
+    left: 20px;
+}
+.header{
+    
+    display: flex; background-color: beige;
+    position: sticky;
+}

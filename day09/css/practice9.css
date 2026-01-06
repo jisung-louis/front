@@ -1,0 +1,41 @@
+body{
+    background-color: red;
+}
+*{
+    box-sizing: border-box;
+}
+.box{
+    background-color: yellow;
+    border-radius: 10px;
+    width: 140px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+.top{
+    display: flex;
+    position: relative;
+}
+.bottom{
+    display: flex;
+    margin-top: 80px;
+}
+.box1{
+    left: 500px;
+}
+.box2{
+    left: 200px;
+}
+.box3{
+    left: 680px;
+}
+.box4{
+    left: 200px;
+}
+.box5{
+    left: 680px;
+}
+.box6{
+    left: 500px;
+}

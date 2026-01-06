@@ -1,0 +1,47 @@
+*{
+    padding:0;margin:0;
+}
+.buttonContainer{
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 80px;
+}
+.circle{
+    box-shadow: 0 0 12px gray;
+    border-radius: 50px;
+}
+.subButton{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+}
+.top{
+    background-color: lightblue;
+}
+.naver{
+    background-color: lightgreen;
+}
+.help{
+    background-color: lightsalmon;
+}
+.naver{
+    background-color: lightcyan;
+}
+.mainButton{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: black;
+    color:white;
+}
+.buttonContainer:hover .subButton{
+    display: block;
+}
