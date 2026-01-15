@@ -1,0 +1,90 @@
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+}
+#wrap{
+    padding: 30px;
+    width: 900px;
+    box-shadow: 0 0 10px #eeeeee;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+button{
+    border:none;
+}
+
+/* header section */
+#header{
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+#header .category{
+    height: 30px;
+    background-color: white;
+    border: 1px solid lightgray;
+    width: 190px;
+}
+.nameInput, .priceInput, .imageInput{
+    height: 30px;
+    padding: 4px 8px;
+    width: 190px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.imageInput{
+    border: 1px solid lightgray;
+    padding: 4px;
+    border-radius: 6px;
+}
+.enrollBtn{
+    background-color: blue;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* divider */
+#divider{
+    height: 1px;
+    background-color: lightgray;
+    margin: 20px 0;
+}
+
+/* content section */
+table{
+    border-collapse: collapse;
+    width: 840px;
+}
+thead tr{
+    background-color: #EEEEEE;
+}
+th, td{
+    text-align: center;
+    padding: 8px 16px;
+    border-bottom: 1px solid lightgray;
+}
+.noteWrap{
+    margin: 0 auto;
+}
+.noteWrap .noteBadge{
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-right: 6px;
+}
+.noteWrap .red{
+    background-color: rgba(255, 0, 0, 0.1);
+    color: red;
+}
+.noteWrap .blue{
+    background-color: rgba(0,0,255,0.1);
+    color: blue;
+}
+.itemImg{
+    border-radius: 12px;
+    width: 100px; height: 100px;
+    object-fit: cover; /* cover : 비율 유지, 짤림 발생 */
+}

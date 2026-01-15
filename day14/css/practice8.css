@@ -1,0 +1,11 @@
+*{
+}
+li{
+    list-style-type: none;
+}
+#title{
+    margin-left: 100px;
+}
+table, td, th{
+    border: 1px solid black;
+}

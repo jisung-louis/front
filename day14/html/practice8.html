@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미니 가계부</title>
+    <link rel="stylesheet" href="../css/practice8.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1 id="title">미니 가계부</h1>
+        <div id="content">
+            <div id="enrollmentSection">
+                <h3 class="sectionTitle">등록 영역</h3>
+                <ul style="padding: 0;">
+                    <li>
+                        날짜선택 : <input type="date" id="dateInput">
+                    </li>
+                    <li>
+                        항목입력 : <input id="itemInput">
+                    </li>
+                    <li>
+                        금액입력 : <input id="priceInput">
+                    </li>
+                    <li>
+                        <button onclick="enroll()">등록버튼</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="listSection">
+                <h3 class="sectionTitle">목록 영역</h3>
+                <table id="table">
+                    <!-- <tr>
+                        <th>날짜</th>
+                        <th>항목</th>
+                        <th>금액</th>
+                    </tr>
+                    <tr>
+                        <td>2025-06-19</td>
+                        <td>점심 식사</td>
+                        <td>9000</td>
+                    </tr>
+                    <tr>
+                        <td>2025-06-19</td>
+                        <td>교통비</td>
+                        <td>1500</td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/practice8.js"></script>
+</body>
+</html>

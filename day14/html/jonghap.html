@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jonghap.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <select class="category">
+                <option value="0">카테고리 선택하세요.</option>
+                <option value="1">과자</option>
+                <option value="2">음료</option>
+                <option value="3">식사</option>
+            </select>
+            <input placeholder="제품명" class="nameInput">
+            <input placeholder="제품가격" class="priceInput">
+            <input type="file" class="imageInput">
+            <button class="enrollBtn" onclick="enroll()">등록</button>
+        </div>
+
+        <div id="divider"></div>
+
+        <div id="content">
+            <table class="contentTable">
+                <thead class="thead">
+                    <tr>
+                        <th>이미지</th>
+                        <th>카테고리명</th>
+                        <th>상품명</th>
+                        <th>가격</th>
+                        <th>등록일</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <!-- 
+                    <tr>
+                        <td><img src="https://placehold.co/100" class="itemImg"></td>
+                        <td>1</td>
+                        <td>코카콜라</td>
+                        <td>1,000</td>
+                        <td>2025-06-17</td>
+                        <td>
+                            <div class="noteWrap">
+                                <button class="noteBadge red" onclick="deleteEnrollment(this)">삭제</button>
+                                <button class="noteBadge blue" onclick="updateEnrollment(this)">수정</button>
+                            </div>
+                        </td>
+                    </tr> 
+                    -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/jonghap.js"></script>
+    
+</body>
+</html>
